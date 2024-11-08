@@ -351,7 +351,8 @@ header {
     background: #333;
     color: #fff;
     padding-top: 30px;
-    min-height: max-width: 70%;
+    min-height: 30px;
+    max-width: 70%;
 }
 header h1 {
     text-align: center;
