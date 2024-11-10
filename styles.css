@@ -1,13 +1,85 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
 
 /* Style for the body of the page */
 body {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: "Roboto";
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     max-width: 1200px;
     align-items: center;
     margin: 0 auto;
+    font-weight: 300;
 }
 /* Style for the application bar */
 .app_bar{
@@ -49,12 +121,13 @@ body {
 
 /* Style for the paragraph in the left section of the application bar */
 .app_bar .left p {
-    font: 20px Andis, Helvetica, sans-serif; /* Font settings */
-    font-weight: bold; /* Bold font */
+    font: 17px "Roboto", sans-serif; /* Font settings */
+    font-weight: 500;
     flex-grow: 1; /* Allow the paragraph to grow and fill available space */
     text-align: center; /* Center text alignment */
     color: #7e7c7c; /* Text color */
     line-height: 0px; /* Line height */
+    margin-top: 1.8%;
 }
 
 /* Style for the search bar */
@@ -70,9 +143,10 @@ body {
 .search input[type="text"] {
     width: 200px;
     padding: 5px;
-    font: 20px Andis, Helvetica, sans-serif;
+    font: 17px "Roboto", sans-serif;
     margin-right: 10px;
     color: #acacac;
+    font-weight: 300;
 
     background-color: #2c2c2c;
     border-radius: 8px;
@@ -91,8 +165,9 @@ mark {
     border: 1px solid #2c2c2c; /* Marc de color negre */
     color: #acacac;
     border-radius: 8px;
-    font: 20px Andis, Helvetica, sans-serif;
+    font: 17px "Roboto", sans-serif;
     cursor: pointer; 
+    font-weight: 300;
 }
 
 /* Active state for the search button */
@@ -104,7 +179,8 @@ mark {
 .container {
     display: flex;
     background-color: #302c2c;
-    font: 20px Andis, Helvetica, sans-serif;
+    font: 17px "Roboto", sans-serif;
+
 }
 
 /* Style for the logo, photo, and habilities sections within the container */
@@ -122,6 +198,8 @@ mark {
     padding: 0px; 
     display: flex;
     flex-direction: column;
+    font-weight: 300;
+    font-size: 15.5px;
 }
 
 /* Style for images within the info_bar section of the logo */
@@ -170,7 +248,8 @@ mark {
 /* Style for list items within the logo */
 .container .logo li {
     color: #fff;
-    font: 20px Andis, Helvetica, sans-serif;
+    font: 15.5px "Roboto", sans-serif;
+    font-weight: 300;
     list-style: none;
     padding-left: 25px; /* Espai per a la icona */
     background: url('square.png') no-repeat left center;
@@ -300,19 +379,11 @@ mark {
 /* Style for paragraphs within the slider-container section of the background */
 .container .photo .background .slider-container p{
     color: #fff;
-    font: bold 25px Andis, Helvetica, sans-serif;
+    font: bold 22px "Roboto", sans-serif;
     margin: 0px 10px 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Style for spans within the background section */
-.background span{
-    color: #fff;
-    font-weight: bold;
-    font: 25px Andis, Helvetica, sans-serif;
-    margin: 0px 10px;
 }
 
 /* Main container for the slider - this holds the images and navigation buttons */
@@ -508,8 +579,8 @@ mark {
 /* Style for list items within the habilities section */
 .container .habilities li {
     color: #fff;
-    font-weight: bold;
-    font: 20px Andis, Helvetica, sans-serif;
+    font: 15.5px "Roboto", sans-serif;
+    font-weight: 300;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -543,8 +614,8 @@ mark {
 /* Style for spans within the circles section of the logo */
 .container .logo .circles span{
     color: #fff;
-    font-weight: 0;
-    font: 20px Andis, Helvetica, sans-serif;
+    font: 15.5px "Roboto", sans-serif;
+    font-weight: 300;
     margin: 0px 0px;
     background-color: #303331;
     padding: 5px 10px 5px 10px;
@@ -659,7 +730,7 @@ h2 {
 
 /* Style for the event info */
 .event .info {
-    font-size: 14px;
+    font-size: 15px;
     color: #ffe6e6;
     margin-top: 10px;
     padding: 10px;
