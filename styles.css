@@ -1,14 +1,15 @@
 
-
+/* Style for the body of the page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    max-width: 70%;
+    max-width: 1200px;
     align-items: center;
     margin: 0 auto;
 }
+/* Style for the application bar */
 .app_bar{
     background-color: #e8e4e4;
     color: #fff;
@@ -16,39 +17,47 @@ body {
     text-align: center;
     height: 25px;
 }
+/* Style for the left section of the application bar */
 .app_bar .left {
     display: flex;
     gap: 10px;
     align-items: center;
 }
+/* Style for images within the left section of the application bar */
 .app_bar .left img {
     width: 20px; 
     height: 20px; 
 }
 
+/* Hover effect for the first image in the left section */
 .app_bar .left img:hover:first-child {
     content: url('close_t.png'); 
     cursor: pointer;   
 }
 
+/* Hover effect for the second image in the left section */
 .app_bar .left img:hover:nth-child(2) {
     content: url('max_button_touch.png'); 
     
 }
 
+/* Hover effect for the third image in the left section */
 .app_bar .left img:hover:nth-child(3) {
     content: url('min_button_touch.png'); 
     
 }
 
+/* Style for the paragraph in the left section of the application bar */
 .app_bar .left p {
-    font: 20px Andis, Helvetica, sans-serif;
-    font-weight: bold;
-    flex-grow: 1;
-    text-align: center;
-    color: #7e7c7c;
-    line-height: 0px;
+    font: 20px Andis, Helvetica, sans-serif; /* Font settings */
+    font-weight: bold; /* Bold font */
+    flex-grow: 1; /* Allow the paragraph to grow and fill available space */
+    text-align: center; /* Center text alignment */
+    color: #7e7c7c; /* Text color */
+    line-height: 0px; /* Line height */
 }
+
+/* Style for the search bar */
 .search {
     background-color: #403c3c;
     color: #fff;
@@ -57,6 +66,7 @@ body {
     height: 25px;
 }
 
+/* Style for the text input in the search bar */
 .search input[type="text"] {
     width: 200px;
     padding: 5px;
@@ -66,12 +76,15 @@ body {
 
     background-color: #2c2c2c;
     border-radius: 8px;
-    border: 1px solid #2c2c2c; /* Marc de color negre */
+    border: 1px solid #2c2c2c; /* Black border */
 }
+/* Style for the mark element */
 mark {
-    background-color: yellow; /* Color de fons per al text marcat */
-    color: black; /* Color del text marcat */
+    background-color: yellow; /* Background color for highlighted text */
+    color: black; /* Text color for highlighted text */
 }
+
+/* Style for the search button */
 .search button {
     padding: 5px 10px;
     background-color: #2c2c2c;
@@ -82,16 +95,19 @@ mark {
     cursor: pointer; 
 }
 
+/* Active state for the search button */
 .search button:active{
     background-color: #555;
 }
 
+/* Style for the main container */
 .container {
     display: flex;
     background-color: #302c2c;
     font: 20px Andis, Helvetica, sans-serif;
 }
 
+/* Style for the logo, photo, and habilities sections within the container */
 .container .logo, .container .photo, .container .habilities {
     flex: 1;
     background-color: #383434; /* Color de fons dels blocs */
@@ -99,6 +115,7 @@ mark {
     margin: 4px;
 }
 
+/* Style for the logo section within the container */
 .container .logo{
     background-color: #383434;
     margin: 4px 4px; 
@@ -107,6 +124,7 @@ mark {
     flex-direction: column;
 }
 
+/* Style for images within the info_bar section of the logo */
 .container .logo .info_bar img {
     width: 20px; 
     height: 20px; 
@@ -114,10 +132,12 @@ mark {
     
 }
 
+/* Style for the first image within the info_bar section of the logo */
 .container .logo .info_bar img:nth-child(1) {
     cursor: pointer; 
 }
 
+/* Style for the info_bar section within the logo */
 .container .logo .info_bar {
     background-color: #403c3c;
     color: #fff;
@@ -129,17 +149,25 @@ mark {
     
 }
 
+/* Style for the info section within the logo */
 .container .logo .info{
     background-color: #403c3c;
     margin: 3px 0px 3px 0px;
 }
 
+/* Style for links within the info section of the logo */
+.container .logo .info a{
+    color: white; /* Color del text blanc */
+}
+
+/* Style for unordered lists within the logo */
 .container .logo ul{
     padding-left: 15px;
     margin: 5;
     font-weight: bold;
 }
 
+/* Style for list items within the logo */
 .container .logo li {
     color: #fff;
     font: 20px Andis, Helvetica, sans-serif;
@@ -150,12 +178,43 @@ mark {
     margin-bottom: 5px;
 }
 
+/* Style for the about section within the logo */
+.container .logo .about{
+    background-color: #403c3c;
+    margin: 3px 0px 6px 0px;
+    padding: 10px 0px;
+}
+
+/* Style for the rectangle within the about section */
+.container .logo .about .rectangle {
+    width: 90%;
+    height: 25px;
+    background-color: #302c2c; /* Rectangle negre */
+    margin: 0px 5% 10px 5%;
+}
+
+/* Style for spans within the about section */
+.container .logo .about span{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Style for paragraphs within the about section */
+.container .logo .about p{
+    color: #fff;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+/* Style for the contact section within the logo */
 .container .logo .contact{
     background-color: #403c3c;
     margin: 3px 0px 6px 0px;
     padding: 10px 0px;
 }
 
+/* Style for spans within the contact section */
 .container .logo .contact span{
     color: #fff;
     font-weight: bold;
@@ -163,6 +222,7 @@ mark {
     
 }
 
+/* Style for the photo section within the container */
 .container .photo {
     background-color: #383434;
     margin: 4px 0px; 
@@ -171,6 +231,7 @@ mark {
     flex-direction: column;
 }
 
+/* Style for images within the photo_bar section of the photo */
 .container .photo .photo_bar img {
     width: 12px; 
     height: 12px; 
@@ -178,13 +239,14 @@ mark {
     
 }
 
+/* Style for the second image within the photo_bar section of the photo */
 .container .photo .photo_bar img:nth-child(2) {
     width: 18px; 
     height: 12px;
     padding: 0px 2px 0 0px; 
 }
 
-
+/* Style for the photo_bar section within the photo */
 .container .photo .photo_bar {
     background-color: #403c3c;
     padding: 7px 10px;
@@ -193,6 +255,7 @@ mark {
     
 }
 
+
 .container .photo .bar {
     background-color: #403c3c;
     padding: 15px 30px;
@@ -200,17 +263,20 @@ mark {
     
 }
 
+/* Style for the first span within the photo_bar section */
 .container .photo .photo_bar span:first-of-type {
     color: #fff;
     font-weight: bold;
 }
 
+/* Style for spans within the photo_bar section */
 .container .photo .photo_bar span {
     color: #2f86c6;
     font-weight: bold;
     margin-left: 5px;
 }
 
+/* Style for images within the cv_ph section of the photo */
 .container .photo .cv_ph img{
     width: 90%; 
     height: 90%; 
@@ -218,6 +284,129 @@ mark {
     padding: 10% 5% 10% 5%;
 }
 
+/* Style for the background section within the photo */
+.container .photo .background {
+    width: 100%; /* Sets the width to fill the available space */
+    height: 100%; /* Sets the height to fill the available space */
+    position: relative; /* Allows for absolute positioning of child elements */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns items in a column (vertical stack) */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin-bottom: 0px;
+    margin: 5px 0px;
+}
+
+/* Style for paragraphs within the slider-container section of the background */
+.container .photo .background .slider-container p{
+    color: #fff;
+    font: bold 25px Andis, Helvetica, sans-serif;
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for spans within the background section */
+.background span{
+    color: #fff;
+    font-weight: bold;
+    font: 25px Andis, Helvetica, sans-serif;
+    margin: 0px 10px;
+}
+
+/* Main container for the slider - this holds the images and navigation buttons */
+.slider-container {
+    position: relative; /* Allows for absolute positioning of navigation buttons */
+    width: 80%; /* Sets the slider width to 60% of the parent container */
+    max-width: 800px; /* Maximum width for larger screens */
+    overflow: hidden; /* Hides the overflow content (only one image is visible at a time) */
+    border-radius: 10px; /* Rounds the corners of the slider */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Flexbox container that holds all the slides */
+.slider {
+    display: flex; /* Enables flexbox layout to line up slides horizontally */
+    transition: transform 0.4s ease-in-out; /* Smooth transition when sliding between images */
+}
+
+/* Each individual slide - takes up full width of the container */
+.slide {
+    min-width: 100%; /* Each slide takes up 100% of the slider container's width */
+    height: 200px; /* Fixed height for each slide */
+    transition: transform 0.5s ease-in-out; /* Smooth transition when slides are changed */
+}
+
+/* Ensures that images fill the slide area while maintaining aspect ratio */
+.slide img {
+    width: 100%; /* Image width matches the slide width */
+    height: 100%; /* Image height matches the slide height */
+    object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
+    border-radius: 10px; /* Rounds the corners of the images to match the slider */
+}
+
+/* Common styling for both previous and next navigation buttons */
+.prev, .next {
+    position: absolute; /* Absolute positioning within the slider container */
+    top: 50%; /* Centers the button vertically */
+    transform: translateY(-50%); /* Offsets the button position by half its height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* White color for the arrow icons */
+    border: none; /* Removes default button borders */
+    width: 40px; /* Fixed width for the buttons */
+    height: 40px; /* Fixed height for the buttons */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    z-index: 10; /* Ensures buttons appear above the slider content */
+    border-radius: 50%; /* Makes the buttons round */
+    transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+    display: flex; /* Enables flexbox for centering the arrow inside the button */
+    justify-content: center; /* Centers arrow horizontally */
+    align-items: center; /* Centers arrow vertically */
+    padding: 0; /* Removes any default padding */
+}
+
+/* Positioning the previous button to the left */
+.prev {
+    left: 10px; /* Positions the button 10px from the left edge */
+}
+
+/* Positioning the next button to the right */
+.next {
+    right: 10px; /* Positions the button 10px from the right edge */
+}
+
+/* Hover effect for navigation buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darkens the button background on hover */
+}
+
+/* Container for the dot indicators below the slider */
+.background .dots-container {
+    margin-top: 20px; /* Space above the dots */
+    display: flex; /* Enables flexbox layout for horizontal alignment */
+    justify-content: center; /* Centers the dots horizontally */
+    align-items: center; /* Centers the dots vertically */
+}
+
+/* Common styling for each individual dot */
+.dot {
+    height: 15px; /* Fixed height for the dots */
+    width: 15px; /* Fixed width for the dots */
+    margin: 0 5px; /* Spacing between the dots */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 50%; /* Makes the dots round */
+    display: inline-block; /* Ensures dots are inline */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+/* Styling for the active dot - indicates the current slide */
+.dot.active {
+    background-color: rgba(255, 255, 255, 1); /* Solid white background for the active dot */
+}
+
+/* Style for the habilities section within the container */
 .container .habilities{
     background-color: #383434;
     display: flex;
@@ -225,6 +414,7 @@ mark {
     padding: 0px;
 }
 
+/* Style for the bar within the habilities section */
 .container .habilities .bar {
     background-color: #403c3c;
     padding: 7px 20px;
@@ -236,6 +426,7 @@ mark {
     
 }
 
+/* Style for the progress bar container */
 .progressBarContainer {
     background-color: #302d28;
     width: 100%;
@@ -244,6 +435,7 @@ mark {
     margin: 0px 0px;
 }
 
+/* Style for the progress bar */
 .progressBar {
     background-color: #2f86c6;
     display: flex;
@@ -257,35 +449,63 @@ mark {
 
 }
 
+/* Style for the cpp class within the progress bar */
 .cpp{
     width: 75%;
 }
 
+/* Style for the java class within the progress bar */
 .java{
     width: 65%;
 }
 
+/* Style for the sql class within the progress bar */
 .sql{
     width: 50%;
 }
 
+/* Style for the html_css_js class within the progress bar */
 .html_css_js{
     width: 55%;
 }
 
+/* Style for the ofimatic class within the progress bar */
 .ofimatic{
     width: 90%;
 }
 
+/* Style for the hard_soft_mant class within the progress bar */
 .hard_soft_mant{
     width: 65%;
 }
 
+/* Style for the catalan class within the progress bar */
+.catalan{
+    width: 98.5%;
+}
+
+/* Style for the english class within the progress bar */
+.english{
+    width: 60%;
+}
+
+/* Style for the spanish class within the progress bar */
+.spanish{
+    width: 98.5%;
+}
+
+/* Style for the french class within the progress bar */
+.french{
+    width: 35%;
+}
+
+/* Style for unordered lists within the habilities section */
 .container .habilities ul{
     padding: 0px 10px;
     margin: 10px 0px 10px 0px;
 }
 
+/* Style for list items within the habilities section */
 .container .habilities li {
     color: #fff;
     font-weight: bold;
@@ -299,12 +519,14 @@ mark {
     padding: 10px;
 }
 
+/* Style for the first image within list items in the habilities section */
 .habilities img:nth-child(1) {
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
 
+/* Style for the rectangle element */
 .rectangle {
     width: 90%;
     height: 25px;
@@ -312,11 +534,13 @@ mark {
     margin: 0px 5% 10px 5%;
 }
 
+/* Style for the circles section */
 .circles {
     display: flex;
     align-items: center;
 }
 
+/* Style for spans within the circles section of the logo */
 .container .logo .circles span{
     color: #fff;
     font-weight: 0;
@@ -325,8 +549,18 @@ mark {
     background-color: #303331;
     padding: 5px 10px 5px 10px;
     width: 58%;
+    text-decoration: none;
 }
 
+/* Style for links within the circles section of the logo */
+.container .logo .circles a{
+    color: #fff;
+    width: 62%;
+    background-color: #303331;
+    padding: 5px 5px 5px 0px;
+}
+
+/* Style for the circle element */
 .circle {
     width: 70px;
     height: 70px;
@@ -335,6 +569,8 @@ mark {
     margin: 5px 20px 5px 20px;
     background-color: #303331;
 }
+
+/* Style for images within the circle element */
 .circle img {
     width: 75%;
     height: 75%;
@@ -342,28 +578,174 @@ mark {
     margin: 12.5%;
 }
 
+/* Style for the progress_Bar element */
 .progress_Bar{
     width: 100%;
     
 }
 
+/* Style for the header */
 header {
     background: #333;
     color: #fff;
     padding-top: 30px;
-    min-height: 30px;
+    min-height: 70px;
 }
+
+/* Style for the header title */
 header h1 {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
 }
+/* Style for sections */
 section {
     padding: 20px;
     margin: 20px 0;
     background: #fff;
     border-radius: 5px;
 }
+
+/* Style for h2 elements */
 h2 {
     color: #333;
+}
+
+/* Style for the timeline */
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 40px 0; /* Augmenta l'espai */
+    background-color: #403c3c;
+}
+
+/* Style for the event container */
+.event {
+    text-align: center;
+    position: relative;
+    width: 150px;
+}
+
+/* Style for the event icon */
+.event .icon {
+    font-size: 34px;
+    height: 80px;
+    width: 80px;
+    background-color: #2f86c6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    top: 0px; 
+    left: 35px;
+    border: 2px solid black;
+}
+
+/* Style for the event year */
+.event .year {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 35px;
+    position: relative;
+    z-index: 3;
+    color: #000000;;
+}
+
+/* Style for the event info */
+.event .info {
+    font-size: 14px;
+    color: #ffe6e6;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    margin: 10px 0px 0px 0px;
+}
+
+/* Style for the timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Canvia la posició a 50% per centrar-la millor */
+    left: 20px;
+    right: 20px;
+    height: 18px;
+    background-color: #555;
+    border-radius: 50px;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+/* Style for the event line */
+.event::before {
+    content: '';
+    position: absolute;
+    top: 37%; /* Ajusta perquè la línia no travessi el cercle */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 30px; /* Ajusta la llargada per no travessar el cercle */
+    background: none;
+    border-right: 2px dashed black;
+    z-index: 1;
+}
+
+/* Styles for small screens (mobile devices) */
+@media (max-width: 600px) {
+    body {
+        max-width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .logo, .container .photo, .container .habilities {
+        flex: 1 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .container .logo .circles span {
+        width: 100%;
+    }
+    .container .photo .cv_ph img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* Styles for medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        max-width: 100%;
+    }
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container .logo, .container .photo, .container .habilities {
+        flex: 1 48%;
+        margin: 1%;
+    }
+}
+
+/* Styles for large screens (desktops) */
+@media (min-width: 901px) {
+    .container {
+        flex-direction: row;
+    }
+    .container .logo, .container .photo, .container .habilities {
+        flex: 1;
+        margin: 4px;
+    }
+    .container .photo .cv_ph img {
+        width: 90%;
+        height: 90%;
+    }
 }
